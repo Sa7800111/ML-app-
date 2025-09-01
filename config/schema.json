@@ -1,0 +1,39 @@
+{
+  "version": "1.0.0",
+  "id": "PassengerId",
+  "target": "Survived",
+  "features": [
+    "Pclass",
+    "Sex",
+    "Age",
+    "Fare",
+    "Embarked"
+  ],
+  "categorical": {
+    "Pclass": [
+      1,
+      2,
+      3
+    ],
+    "Sex": [
+      "male",
+      "female"
+    ],
+    "Embarked": [
+      "C",
+      "Q",
+      "S"
+    ]
+  },
+  "numeric": {
+    "Age": {
+      "min": 0,
+      "max": 100,
+      "allow_null": true
+    },
+    "Fare": {
+      "min": 0,
+      "allow_null": true
+    }
+  }
+}
